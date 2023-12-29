@@ -1,0 +1,24 @@
+diff --git a/node_modules/typescript-json-schema/dist/typescript-json-schema.js b/node_modules/typescript-json-schema/dist/typescript-json-schema.js
+index b230291..e6fb7af 100644
+--- a/node_modules/typescript-json-schema/dist/typescript-json-schema.js
++++ b/node_modules/typescript-json-schema/dist/typescript-json-schema.js
+@@ -482,6 +482,11 @@ var JsonSchemaGenerator = (function () {
+                 definition.properties = {};
+                 definition.additionalProperties = true;
+             }
++            else if (propertyTypeString === "bigint") {
++                definition.type = "number";
++                definition.properties = {};
++                definition.additionalProperties = false;
++            }
+             else {
+                 var value = extractLiteralValue(propertyType);
+                 if (value !== undefined) {
+@@ -558,6 +563,7 @@ var JsonSchemaGenerator = (function () {
+                         }
+                     }
+                 }
++
+                 else {
+                     var error = new TypeError("Unsupported type: " + propertyTypeString);
+                     error.type = propertyType;

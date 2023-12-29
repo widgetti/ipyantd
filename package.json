@@ -1,0 +1,37 @@
+{
+  "name": "jupyter-antd",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:antd && npm run build:icons && npm run build:antd-jupyter && npm run build:schema",
+    "watch": "npm run watch:antd-jupyter",
+    "build:schema": "npm run build:schema:initial && npm run build:schema:final",
+    "build:schema:initial": "node ./generate/generate-schema.mjs",
+    "build:schema:final": "python ./generate/polish-schema.py",
+    "build:py": "npm run build:py:types && npm run build:py:types:patch && npm run build:py:types:check",
+    "build:py:types": "datamodel-codegen --input generate/schema-polished.json --input-file-type jsonschema --output ipyantd/types.py --output-model-type typing.TypedDict",
+    "build:py:types:patch": "patch ipyantd/types.py < fix_types.patch",
+    "build:py:types:check": "python -c \"import ipyantd.types\"",
+    "build:antd": "esbuild ./node_modules/antd/es/index.js --bundle --outfile=./ipyantd/assets/antd.mjs --format=esm --external:react --external:react-dom",
+    "build:icons": "esbuild ./node_modules/@ant-design/icons/es/index.js --bundle --outfile=./ipyantd/assets/@ant-design/icons.bundle.mjs  --format=esm --external:antd --external:react --external:react-dom",
+    "build:antd-jupyter": "esbuild ./ipyantd/assets/antd-jupyter.tsx --bundle --outfile=./ipyantd/assets/antd-jupyter.js  --format=esm --external:antd --external:react --external:react-dom",
+    "watch:antd-jupyter": "esbuild ./ipyantd/assets/antd-jupyter.tsx --bundle --outfile=./ipyantd/assets/antd-jupyter.js  --format=esm --external:antd --external:react --external:react-dom --watch",
+    "postinstall": "patch-package"
+  },
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.3.0",
+    "antd": "^5.12.4",
+    "antd-style": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "esbuild": "^0.19.10",
+    "patch-package": "^8.0.0",
+    "typescript-json-schema": "^0.62.0"
+  }
+}

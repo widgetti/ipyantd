@@ -1,0 +1,22 @@
+37823c37823
+<         'preview': NotRequired[Union[ImagePreviewType, bool]],
+---
+>         'preview': NotRequired[Union["ImagePreviewType", bool]],
+38023c38023
+<         'items': NotRequired[List[ItemType]],
+---
+>         'items': NotRequired[List["ItemType"]],
+38117,38118c38117,38118
+<         SubMenuTypeMenuItemType,
+<         MenuItemGroupTypeMenuItemType,
+---
+>         "SubMenuTypeMenuItemType",
+>         "MenuItemGroupTypeMenuItemType",
+38146c38146
+<         MenuItemGroupTypeMenuItemType,
+---
+>         "MenuItemGroupTypeMenuItemType",
+40523c40523
+< ColorInput = Union[RGB, RGBA, HSL, HSLA, HSV, HSVA, TinyColor, Union[str, float]]
+---
+> ColorInput = Union[RGB, RGBA, HSL, HSLA, HSV, HSVA, "TinyColor", Union[str, float]]

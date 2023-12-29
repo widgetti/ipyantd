@@ -1,0 +1,74 @@
+[build-system]
+requires = [
+    "hatchling>=1.3.1",
+    "jupyterlab==3.*",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "ipyantd"
+dynamic = ["version"]
+description = "React for ipywidgets that just works"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+requires-python = ">=3.7"
+authors = [
+    { name = "Maarten A. Breddels", email = "maartenbreddels@gmail.com" },
+]
+keywords = [
+    "IPython",
+    "Jupyter",
+    "Widgets",
+]
+classifiers = [
+    "Framework :: Jupyter",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "ipywidgets>=7.0.0",
+    "anywidget>=0.2.0",
+    "ipyreact>=0.4.0",
+]
+
+[project.optional-dependencies]
+docs = [
+    "jupyter_sphinx",
+    "nbsphinx",
+    "nbsphinx-link",
+    "pypandoc",
+    "pytest_check_links",
+    "recommonmark",
+    "sphinx>=1.5",
+    "sphinx_rtd_theme",
+]
+dev = [
+    "pre-commit",
+]
+examples = []
+unit-test = [
+    "pytest>=6.0",
+]
+ui-test = [
+    "solara[pytest]",
+    "pytest>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/widgetti/ipyantd"
+
+[tool.hatch.version]
+path = "ipyantd/_version.py"
+
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".github",
+]
