@@ -1,6 +1,6 @@
 import ipyreact
 import traitlets
-from traitlets import List, Unicode, observe
+from traitlets import List, Unicode
 
 
 class Button(ipyreact.Widget):
