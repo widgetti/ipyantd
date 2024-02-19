@@ -7,7 +7,7 @@ HERE = Path(__file__).parent
 
 schema_file = HERE / "schema.json"
 
-with open(schema_file) as f:
+with open(schema_file, encoding="utf8") as f:
     schema = json.load(f)
 
 mapping = {
