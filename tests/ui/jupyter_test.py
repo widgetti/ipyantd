@@ -22,4 +22,5 @@ def test_antd_in_jupyter(
     button.click()
     button = page_session.locator("button >> text=Clicked")
     button.wait_for()
+    page_session.wait_for_timeout(500)  # let animations play out
     assert_solara_snapshot(button.screenshot())
