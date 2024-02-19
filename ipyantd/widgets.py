@@ -18,6 +18,38 @@ class Flex(ipyreact.Widget):
     _type = traitlets.Unicode("Flex").tag(sync=True)
 
 
+class Row(ipyreact.Widget):
+    _module = traitlets.Unicode("antd").tag(sync=True)
+    _type = traitlets.Unicode("Row").tag(sync=True)
+
+
+class Col(ipyreact.Widget):
+    _module = traitlets.Unicode("antd").tag(sync=True)
+    _type = traitlets.Unicode("Col").tag(sync=True)
+
+
+class Select(ipyreact.ValueWidget):
+    _module = traitlets.Unicode("antd-jupyter").tag(sync=True)
+    _type = traitlets.Unicode("SelectStatefull").tag(sync=True)
+
+
+class Switch(ipyreact.ValueWidget):
+    _module = traitlets.Unicode("antd-jupyter").tag(sync=True)
+    _type = traitlets.Unicode("SwitchStatefull").tag(sync=True)
+
+
+class Dropdown(ipyreact.ValueWidget):
+    value = traitlets.Bool(False).tag(sync=True)
+    _module = traitlets.Unicode("antd-jupyter").tag(sync=True)
+    _type = traitlets.Unicode("DropdownStatefull").tag(sync=True)
+
+
+class Modal(ipyreact.ValueWidget):
+    value = traitlets.Bool(False).tag(sync=True)
+    _module = traitlets.Unicode("antd-jupyter").tag(sync=True)
+    _type = traitlets.Unicode("ModalStatefull").tag(sync=True)
+
+
 class DatePicker(ipyreact.ValueWidget):
     # _module = traitlets.Unicode("antd").tag(sync=True)
     # _type = traitlets.Unicode("DatePicker").tag(sync=True)
