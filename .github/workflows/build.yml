@@ -102,7 +102,21 @@ jobs:
         with:
           name: ipyantd-test-results-${{ github.run_number }}
           path: test-results
-
+  release_as_artifact:
+    runs-on: ubuntu-20.04
+    needs: [build]
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: ipyantd-dist-${{ github.run_number }}
+      - name: Extract
+        run: tar -xvf dist/ipyantd-*.tar.gz && mv ipyantd-* ipyantd
+      - name: Upload dist artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ipyantd-src-${{ github.run_number }}
+          path: |
+            ./ipyantd
   release:
     if: startsWith(github.event.ref, 'refs/tags/v')
     needs: [ui-test]
