@@ -54,6 +54,7 @@ class DatePicker(ipyreact.ValueWidget):
     # _module = traitlets.Unicode("antd").tag(sync=True)
     # _type = traitlets.Unicode("DatePicker").tag(sync=True)
     _esm = """
+    import React from "react";
     import {DatePicker} from "antd";
     import dayjs from "https://esm.sh/dayjs@1.11.10"
 
@@ -71,6 +72,7 @@ class DatePicker(ipyreact.ValueWidget):
 
 class ColorPicker(ipyreact.ValueWidget):
     _esm = """
+import React from "react";
 import {ColorPicker} from "antd";
 
 export default ({value, setValue, children, ...rest}) => {
