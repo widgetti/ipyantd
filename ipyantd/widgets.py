@@ -65,9 +65,7 @@ class DatePicker(ipyreact.ValueWidget):
     }
     
     """
-    _dependencies = List(Unicode(), ["antd", "dayjs-formatter"], allow_none=True).tag(
-        sync=True
-    )
+    _dependencies = List(Unicode(), ["antd", "dayjs-formatter"], allow_none=True).tag(sync=True)
 
 
 class ColorPicker(ipyreact.ValueWidget):

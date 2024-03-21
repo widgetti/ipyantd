@@ -42,13 +42,5 @@ export function ModalStatefull({ value, setValue, ...rest }) {
       rest.onCancel();
     }
   };
-  return (
-    <antd.Modal
-      open={value}
-      afterOpenChange={onOpenChange}
-      onOk={handleOk}
-      onCancel={handleCancel}
-      {...rest}
-    />
-  );
+  return <antd.Modal open={value} afterOpenChange={onOpenChange} onOk={handleOk} onCancel={handleCancel} {...rest} />;
 }

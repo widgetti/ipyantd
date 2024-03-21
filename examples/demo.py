@@ -37,15 +37,11 @@ options = [
 menu_items = [
     dict(
         key="1",
-        label=ipyreact.Widget.element(
-            _type="div", children=["Click me 1"], events={"onClick": report_click}
-        ),
+        label=ipyreact.Widget.element(_type="div", children=["Click me 1"], events={"onClick": report_click}),
     ),
     dict(
         key="2",
-        label=ipyreact.Widget.element(
-            _type="div", children=["Click me 2"], events={"onClick": report_click}
-        ),
+        label=ipyreact.Widget.element(_type="div", children=["Click me 2"], events={"onClick": report_click}),
     ),
 ]
 text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -64,87 +60,37 @@ def Page():
             # buttons
             with antd.Col(props=dict(span=8, style={"boxSizing": "border-box"})):
                 with ipyreact.Widget.element(_type="div"):
-                    antd.Button(
-                        children=["Button"],
-                        props=dict(type="primary"),
-                        events={"onClick": report_click},
-                    )
+                    antd.Button(children=["Button"], props=dict(type="primary"), events={"onClick": report_click})
                     antd.Button(children=["Button"])
             with antd.Col(props=dict(span=8)):
-                antd.Button(
-                    children=["Button"], props=dict(type="primary", shape="round")
-                )
-                antd.Button(
-                    props=dict(
-                        type="primary",
-                        shape="circle",
-                        icon=icons.Icon("SearchOutlined"),
-                    )
-                )
-                antd.Button(
-                    props=dict(shape="circle", icon=icons.Icon("SearchOutlined"))
-                )
+                antd.Button(children=["Button"], props=dict(type="primary", shape="round"))
+                antd.Button(props=dict(type="primary", shape="circle", icon=icons.Icon("SearchOutlined")))
+                antd.Button(props=dict(shape="circle", icon=icons.Icon("SearchOutlined")))
             with antd.Col(props=dict(span=8)):
                 antd.Button(children=["Button"], props=dict(type="text"))
             with antd.Col(props=dict(span=8)):
-                antd.Button(
-                    children=["Button"], props=dict(type="primary", size="small")
-                )
+                antd.Button(children=["Button"], props=dict(type="primary", size="small"))
                 antd.Button(children=["Button"], props=dict(size="small"))
             with antd.Col(props=dict(span=8)):
-                antd.Button(
-                    children=["Button"],
-                    props=dict(type="primary", shape="round", size="small"),
-                )
-                antd.Button(
-                    props=dict(
-                        type="primary",
-                        shape="circle",
-                        icon=icons.Icon("SearchOutlined"),
-                        size="small",
-                    )
-                )
-                antd.Button(
-                    props=dict(
-                        shape="circle", icon=icons.Icon("SearchOutlined"), size="small"
-                    )
-                )
+                antd.Button(children=["Button"], props=dict(type="primary", shape="round", size="small"))
+                antd.Button(props=dict(type="primary", shape="circle", icon=icons.Icon("SearchOutlined"), size="small"))
+                antd.Button(props=dict(shape="circle", icon=icons.Icon("SearchOutlined"), size="small"))
             with antd.Col(props=dict(span=8)):
                 antd.Button(children=["Button"], props=dict(type="text", size="small"))
 
             # sliders
             with antd.Col(props=dict(span=8)):
-                antd.Slider(
-                    value=slider.value, on_value=slider.set, props=dict(min=0, max=100)
-                )
+                antd.Slider(value=slider.value, on_value=slider.set, props=dict(min=0, max=100))
             with antd.Col(props=dict(span=8)):
-                antd.Slider(
-                    value=slider_range.value,
-                    on_value=slider_range.set,
-                    props=dict(min=0, max=100, range=True),
-                )
+                antd.Slider(value=slider_range.value, on_value=slider_range.set, props=dict(min=0, max=100, range=True))
             with antd.Col(props=dict(span=8)):
-                antd.Slider(
-                    value=slider.value,
-                    on_value=slider.set,
-                    props=dict(min=0, max=100, tooltip=dict(open=True)),
-                )
+                antd.Slider(value=slider.value, on_value=slider.set, props=dict(min=0, max=100, tooltip=dict(open=True)))
 
             # select
             with antd.Col(props=dict(span=8)):
-                antd.Select(
-                    value=select.value,
-                    on_value=select.set,
-                    props=dict(options=options, style=dict(width="120px")),
-                )
+                antd.Select(value=select.value, on_value=select.set, props=dict(options=options, style=dict(width="120px")))
             with antd.Col(props=dict(span=8)):
-                antd.Select(
-                    value=multi_select.value,
-                    on_value=multi_select.set,
-                    props=dict(
-                        options=options, style=dict(width="220px"), mode="multiple"
-                    ),
-                )
+                antd.Select(value=multi_select.value, on_value=multi_select.set, props=dict(options=options, style=dict(width="220px"), mode="multiple"))
             with antd.Col(props=dict(span=8)):
                 pass
                 # only supported in 5.31+
@@ -154,21 +100,12 @@ def Page():
             with antd.Col(props=dict(span=8)):
                 antd.Switch(value=switch.value, on_value=switch.set)
             with antd.Col(props=dict(span=8)):
-                with antd.Dropdown(
-                    props=dict(menu=dict(items=menu_items), trigger=["click"])
-                ):
+                with antd.Dropdown(props=dict(menu=dict(items=menu_items), trigger=["click"])):
                     ipyreact.Widget.element(_type="span", children=["Menu"])
             with antd.Col(props=dict(span=8)):
-                with antd.Modal(
-                    value=dialog.value,
-                    events={"onOk": dialog_close, "onCancel": dialog_close},
-                ):
+                with antd.Modal(value=dialog.value, events={"onOk": dialog_close, "onCancel": dialog_close}):
                     ipyreact.Widget.element(_type="div", children=[text])
-                antd.Button(
-                    children=["Dialog"],
-                    props=dict(type="primary"),
-                    events={"onClick": dialog_open},
-                )
+                antd.Button(children=["Dialog"], props=dict(type="primary"), events={"onClick": dialog_open})
 
     solara.Preformatted(f"message: {message.value or ''}")
     solara.Preformatted(f"slider: {slider.value}")

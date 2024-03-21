@@ -149,9 +149,7 @@ class NotificationConfig(TypedDict):
     bottom: NotRequired[float]
     prefixCls: NotRequired[str]
     getContainer: NotRequired[Dict[str, Any]]
-    placement: NotRequired[
-        Literal["bottom", "bottomLeft", "bottomRight", "top", "topLeft", "topRight"]
-    ]
+    placement: NotRequired[Literal["bottom", "bottomLeft", "bottomRight", "top", "topLeft", "topRight"]]
     maxCount: NotRequired[float]
     rtl: NotRequired[bool]
     stack: NotRequired[Union[Stack, bool]]
@@ -527,9 +525,7 @@ class Permissions(TypedDict):
     pass
 
 
-ServiceWorkerState = Literal[
-    "activated", "activating", "installed", "installing", "parsed", "redundant"
-]
+ServiceWorkerState = Literal["activated", "activating", "installed", "installing", "parsed", "redundant"]
 
 
 PromiseServiceWorkerRegistration = TypedDict(
@@ -607,9 +603,7 @@ class BarProp(TypedDict):
     visible: bool
 
 
-OrientationType = Literal[
-    "landscape-primary", "landscape-secondary", "portrait-primary", "portrait-secondary"
-]
+OrientationType = Literal["landscape-primary", "landscape-secondary", "portrait-primary", "portrait-secondary"]
 
 
 class Storage(TypedDict):
@@ -717,9 +711,7 @@ class ColSize(TypedDict):
     pull: NotRequired[Union[str, float]]
 
 
-ColorFormats = Literal[
-    "hex", "hex3", "hex4", "hex6", "hex8", "hsl", "hsv", "name", "prgb", "rgb"
-]
+ColorFormats = Literal["hex", "hex3", "hex4", "hex6", "hex8", "hsl", "hsv", "name", "prgb", "rgb"]
 
 
 class RGB(TypedDict):
@@ -968,9 +960,7 @@ class PartialRecordBreakpointNumber1(TypedDict):
     xs: NotRequired[float]
 
 
-class FieldXxlNumberUndefinedXlNumberUndefinedLgNumberUndefinedMdNumberUndefinedSmNumberUndefinedXsNumberUndefined(
-    TypedDict
-):
+class FieldXxlNumberUndefinedXlNumberUndefinedLgNumberUndefinedMdNumberUndefinedSmNumberUndefinedXsNumberUndefined(TypedDict):
     xxl: NotRequired[float]
     xl: NotRequired[float]
     lg: NotRequired[float]
@@ -1079,36 +1069,12 @@ class ResponsiveAligns(TypedDict):
 
 
 class ResponsiveJustify(TypedDict):
-    xxl: NotRequired[
-        Literal[
-            "center", "end", "space-around", "space-between", "space-evenly", "start"
-        ]
-    ]
-    xl: NotRequired[
-        Literal[
-            "center", "end", "space-around", "space-between", "space-evenly", "start"
-        ]
-    ]
-    lg: NotRequired[
-        Literal[
-            "center", "end", "space-around", "space-between", "space-evenly", "start"
-        ]
-    ]
-    md: NotRequired[
-        Literal[
-            "center", "end", "space-around", "space-between", "space-evenly", "start"
-        ]
-    ]
-    sm: NotRequired[
-        Literal[
-            "center", "end", "space-around", "space-between", "space-evenly", "start"
-        ]
-    ]
-    xs: NotRequired[
-        Literal[
-            "center", "end", "space-around", "space-between", "space-evenly", "start"
-        ]
-    ]
+    xxl: NotRequired[Literal["center", "end", "space-around", "space-between", "space-evenly", "start"]]
+    xl: NotRequired[Literal["center", "end", "space-around", "space-between", "space-evenly", "start"]]
+    lg: NotRequired[Literal["center", "end", "space-around", "space-between", "space-evenly", "start"]]
+    md: NotRequired[Literal["center", "end", "space-around", "space-between", "space-evenly", "start"]]
+    sm: NotRequired[Literal["center", "end", "space-around", "space-between", "space-evenly", "start"]]
+    xs: NotRequired[Literal["center", "end", "space-around", "space-between", "space-evenly", "start"]]
 
 
 SegmentedValue = Union[str, float]
@@ -1146,9 +1112,7 @@ EventValueDayjs = Optional[Dayjs]
 PanelMode = Literal["date", "decade", "month", "quarter", "time", "week", "year"]
 
 
-class RecordStringEventValueDayjsEventValueDayjsEventValueDayjsEventValueDayjs(
-    TypedDict
-):
+class RecordStringEventValueDayjsEventValueDayjsEventValueDayjsEventValueDayjs(TypedDict):
     pass
 
 
@@ -3951,9 +3915,7 @@ class CSSProperties(TypedDict):
     animationDelay: NotRequired[
         Union[
             AnimationDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     animationDirection: NotRequired[
@@ -3976,9 +3938,7 @@ class CSSProperties(TypedDict):
     animationDuration: NotRequired[
         Union[
             AnimationDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     animationFillMode: NotRequired[
@@ -5413,18 +5373,14 @@ class CSSProperties(TypedDict):
     borderBottomLeftRadius: NotRequired[
         Union[
             BorderBottomLeftRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     borderBottomRightRadius: NotRequired[
         Union[
             BorderBottomRightRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -5480,27 +5436,21 @@ class CSSProperties(TypedDict):
     borderEndEndRadius: NotRequired[
         Union[
             BorderEndEndRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     borderEndStartRadius: NotRequired[
         Union[
             BorderEndStartRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     borderImageOutset: NotRequired[
         Union[
             BorderImageOutset,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -5524,9 +5474,7 @@ class CSSProperties(TypedDict):
     borderImageSlice: NotRequired[
         Union[
             BorderImageSlice,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     borderImageSource: NotRequired[
@@ -6701,27 +6649,21 @@ class CSSProperties(TypedDict):
     borderSpacing: NotRequired[
         Union[
             BorderSpacing,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     borderStartEndRadius: NotRequired[
         Union[
             BorderStartEndRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     borderStartStartRadius: NotRequired[
         Union[
             BorderStartStartRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -6919,18 +6861,14 @@ class CSSProperties(TypedDict):
     borderTopLeftRadius: NotRequired[
         Union[
             BorderTopLeftRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     borderTopRightRadius: NotRequired[
         Union[
             BorderTopRightRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -8225,17 +8163,13 @@ class CSSProperties(TypedDict):
     flexGrow: NotRequired[
         Union[
             FlexGrow,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     flexShrink: NotRequired[
         Union[
             FlexShrink,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     flexWrap: NotRequired[
@@ -9256,9 +9190,7 @@ class CSSProperties(TypedDict):
     lineHeightStep: NotRequired[
         Union[
             LineHeightStep,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -9450,9 +9382,7 @@ class CSSProperties(TypedDict):
     maskBorderOutset: NotRequired[
         Union[
             MaskBorderOutset,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -9476,9 +9406,7 @@ class CSSProperties(TypedDict):
     maskBorderSlice: NotRequired[
         Union[
             MaskBorderSlice,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     maskBorderSource: NotRequired[
@@ -9935,9 +9863,7 @@ class CSSProperties(TypedDict):
     motionDistance: NotRequired[
         Union[
             MotionDistance,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -10034,9 +9960,7 @@ class CSSProperties(TypedDict):
     offsetDistance: NotRequired[
         Union[
             OffsetDistance,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -10114,25 +10038,19 @@ class CSSProperties(TypedDict):
     opacity: NotRequired[
         Union[
             Opacity,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     order: NotRequired[
         Union[
             Order,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     orphans: NotRequired[
         Union[
             Orphans,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     outlineColor: NotRequired[
@@ -10330,9 +10248,7 @@ class CSSProperties(TypedDict):
     outlineOffset: NotRequired[
         Union[
             OutlineOffset,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -10548,72 +10464,56 @@ class CSSProperties(TypedDict):
     paddingBlockEnd: NotRequired[
         Union[
             PaddingBlockEnd,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingBlockStart: NotRequired[
         Union[
             PaddingBlockStart,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingBottom: NotRequired[
         Union[
             PaddingBottom,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingInlineEnd: NotRequired[
         Union[
             PaddingInlineEnd,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingInlineStart: NotRequired[
         Union[
             PaddingInlineStart,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingLeft: NotRequired[
         Union[
             PaddingLeft,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingRight: NotRequired[
         Union[
             PaddingRight,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingTop: NotRequired[
         Union[
             PaddingTop,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -10924,72 +10824,56 @@ class CSSProperties(TypedDict):
     scrollMarginBlockEnd: NotRequired[
         Union[
             ScrollMarginBlockEnd,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginBlockStart: NotRequired[
         Union[
             ScrollMarginBlockStart,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginBottom: NotRequired[
         Union[
             ScrollMarginBottom,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginInlineEnd: NotRequired[
         Union[
             ScrollMarginInlineEnd,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginInlineStart: NotRequired[
         Union[
             ScrollMarginInlineStart,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginLeft: NotRequired[
         Union[
             ScrollMarginLeft,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginRight: NotRequired[
         Union[
             ScrollMarginRight,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginTop: NotRequired[
         Union[
             ScrollMarginTop,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -11133,36 +11017,28 @@ class CSSProperties(TypedDict):
     scrollSnapMarginBottom: NotRequired[
         Union[
             ScrollSnapMarginBottom,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollSnapMarginLeft: NotRequired[
         Union[
             ScrollSnapMarginLeft,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollSnapMarginRight: NotRequired[
         Union[
             ScrollSnapMarginRight,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollSnapMarginTop: NotRequired[
         Union[
             ScrollSnapMarginTop,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -11273,17 +11149,13 @@ class CSSProperties(TypedDict):
     shapeImageThreshold: NotRequired[
         Union[
             ShapeImageThreshold,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     shapeMargin: NotRequired[
         Union[
             ShapeMargin,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -11308,9 +11180,7 @@ class CSSProperties(TypedDict):
     tabSize: NotRequired[
         Union[
             TabSize,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -11844,9 +11714,7 @@ class CSSProperties(TypedDict):
     textEmphasisPosition: NotRequired[
         Union[
             TextEmphasisPosition,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     textEmphasisStyle: NotRequired[
@@ -11873,9 +11741,7 @@ class CSSProperties(TypedDict):
     textIndent: NotRequired[
         Union[
             TextIndent,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -12117,17 +11983,13 @@ class CSSProperties(TypedDict):
     transitionDelay: NotRequired[
         Union[
             TransitionDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     transitionDuration: NotRequired[
         Union[
             TransitionDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     transitionProperty: NotRequired[
@@ -12288,9 +12150,7 @@ class CSSProperties(TypedDict):
     widows: NotRequired[
         Union[
             Widows,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     width: NotRequired[
@@ -12419,9 +12279,7 @@ class CSSProperties(TypedDict):
             ],
         ]
     ]
-    all: NotRequired[
-        Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"]
-    ]
+    all: NotRequired[Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"]]
     animation: NotRequired[
         Union[
             Animation,
@@ -14739,9 +14597,7 @@ class CSSProperties(TypedDict):
     borderRadius: NotRequired[
         Union[
             BorderRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -16265,27 +16121,21 @@ class CSSProperties(TypedDict):
     padding: NotRequired[
         Union[
             Padding,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingBlock: NotRequired[
         Union[
             PaddingBlock,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     paddingInline: NotRequired[
         Union[
             PaddingInline,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -16363,27 +16213,21 @@ class CSSProperties(TypedDict):
     scrollMargin: NotRequired[
         Union[
             ScrollMargin,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginBlock: NotRequired[
         Union[
             ScrollMarginBlock,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     scrollMarginInline: NotRequired[
         Union[
             ScrollMarginInline,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -16435,9 +16279,7 @@ class CSSProperties(TypedDict):
     scrollSnapMargin: NotRequired[
         Union[
             ScrollSnapMargin,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -16885,9 +16727,7 @@ class CSSProperties(TypedDict):
     MozAnimationDelay: NotRequired[
         Union[
             MozAnimationDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     MozAnimationDirection: NotRequired[
@@ -16910,9 +16750,7 @@ class CSSProperties(TypedDict):
     MozAnimationDuration: NotRequired[
         Union[
             MozAnimationDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     MozAnimationFillMode: NotRequired[
@@ -18778,18 +18616,14 @@ class CSSProperties(TypedDict):
     MozPaddingEnd: NotRequired[
         Union[
             MozPaddingEnd,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozPaddingStart: NotRequired[
         Union[
             MozPaddingStart,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -18842,9 +18676,7 @@ class CSSProperties(TypedDict):
     MozTabSize: NotRequired[
         Union[
             MozTabSize,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -18909,17 +18741,13 @@ class CSSProperties(TypedDict):
     MozTransitionDelay: NotRequired[
         Union[
             MozTransitionDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     MozTransitionDuration: NotRequired[
         Union[
             MozTransitionDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     MozTransitionProperty: NotRequired[
@@ -19073,25 +18901,19 @@ class CSSProperties(TypedDict):
     msContentZoomLimitMax: NotRequired[
         Union[
             MsContentZoomLimitMax,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msContentZoomLimitMin: NotRequired[
         Union[
             MsContentZoomLimitMin,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msContentZoomSnapPoints: NotRequired[
         Union[
             MsContentZoomSnapPoints,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msContentZoomSnapType: NotRequired[
@@ -19122,9 +18944,7 @@ class CSSProperties(TypedDict):
     msFilter: NotRequired[
         Union[
             MsFilter,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msFlexDirection: NotRequired[
@@ -19144,9 +18964,7 @@ class CSSProperties(TypedDict):
     msFlexPositive: NotRequired[
         Union[
             MsFlexPositive,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msFlowFrom: NotRequired[
@@ -19256,9 +19074,7 @@ class CSSProperties(TypedDict):
     msHyphenateLimitZone: NotRequired[
         Union[
             MsHyphenateLimitZone,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -19305,9 +19121,7 @@ class CSSProperties(TypedDict):
     msOrder: NotRequired[
         Union[
             MsOrder,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msOverflowStyle: NotRequired[
@@ -19386,9 +19200,7 @@ class CSSProperties(TypedDict):
     msScrollLimitXMin: NotRequired[
         Union[
             MsScrollLimitXMin,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -19410,9 +19222,7 @@ class CSSProperties(TypedDict):
     msScrollLimitYMin: NotRequired[
         Union[
             MsScrollLimitYMin,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -19431,17 +19241,13 @@ class CSSProperties(TypedDict):
     msScrollSnapPointsX: NotRequired[
         Union[
             MsScrollSnapPointsX,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msScrollSnapPointsY: NotRequired[
         Union[
             MsScrollSnapPointsY,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msScrollSnapType: NotRequired[
@@ -21116,17 +20922,13 @@ class CSSProperties(TypedDict):
     msTransitionDelay: NotRequired[
         Union[
             MsTransitionDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msTransitionDuration: NotRequired[
         Union[
             MsTransitionDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msTransitionProperty: NotRequired[
@@ -21210,9 +21012,7 @@ class CSSProperties(TypedDict):
     msWrapMargin: NotRequired[
         Union[
             MsWrapMargin,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -21317,9 +21117,7 @@ class CSSProperties(TypedDict):
     WebkitAnimationDelay: NotRequired[
         Union[
             WebkitAnimationDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitAnimationDirection: NotRequired[
@@ -21342,9 +21140,7 @@ class CSSProperties(TypedDict):
     WebkitAnimationDuration: NotRequired[
         Union[
             WebkitAnimationDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitAnimationFillMode: NotRequired[
@@ -21795,44 +21591,34 @@ class CSSProperties(TypedDict):
     WebkitBorderBottomLeftRadius: NotRequired[
         Union[
             WebkitBorderBottomLeftRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     WebkitBorderBottomRightRadius: NotRequired[
         Union[
             WebkitBorderBottomRightRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     WebkitBorderImageSlice: NotRequired[
         Union[
             WebkitBorderImageSlice,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitBorderTopLeftRadius: NotRequired[
         Union[
             WebkitBorderTopLeftRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     WebkitBorderTopRightRadius: NotRequired[
         Union[
             WebkitBorderTopRightRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -22252,17 +22038,13 @@ class CSSProperties(TypedDict):
     WebkitFlexGrow: NotRequired[
         Union[
             WebkitFlexGrow,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitFlexShrink: NotRequired[
         Union[
             WebkitFlexShrink,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitFlexWrap: NotRequired[
@@ -22497,9 +22279,7 @@ class CSSProperties(TypedDict):
     WebkitMaskBoxImageOutset: NotRequired[
         Union[
             WebkitMaskBoxImageOutset,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -22523,9 +22303,7 @@ class CSSProperties(TypedDict):
     WebkitMaskBoxImageSlice: NotRequired[
         Union[
             WebkitMaskBoxImageSlice,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitMaskBoxImageSource: NotRequired[
@@ -22776,9 +22554,7 @@ class CSSProperties(TypedDict):
     WebkitOrder: NotRequired[
         Union[
             WebkitOrder,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitOverflowScrolling: NotRequired[
@@ -22796,18 +22572,14 @@ class CSSProperties(TypedDict):
     WebkitPaddingEnd: NotRequired[
         Union[
             WebkitPaddingEnd,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     WebkitPaddingStart: NotRequired[
         Union[
             WebkitPaddingStart,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -22896,9 +22668,7 @@ class CSSProperties(TypedDict):
     WebkitShapeMargin: NotRequired[
         Union[
             WebkitShapeMargin,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -23548,9 +23318,7 @@ class CSSProperties(TypedDict):
     WebkitTextEmphasisPosition: NotRequired[
         Union[
             WebkitTextEmphasisPosition,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitTextEmphasisStyle: NotRequired[
@@ -23987,9 +23755,7 @@ class CSSProperties(TypedDict):
     WebkitTextStrokeWidth: NotRequired[
         Union[
             WebkitTextStrokeWidth,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -24071,17 +23837,13 @@ class CSSProperties(TypedDict):
     WebkitTransitionDelay: NotRequired[
         Union[
             WebkitTransitionDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitTransitionDuration: NotRequired[
         Union[
             WebkitTransitionDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitTransitionProperty: NotRequired[
@@ -24458,9 +24220,7 @@ class CSSProperties(TypedDict):
     msContentZoomLimit: NotRequired[
         Union[
             MsContentZoomLimit,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msContentZoomSnap: NotRequired[
@@ -24502,25 +24262,19 @@ class CSSProperties(TypedDict):
     msScrollLimit: NotRequired[
         Union[
             MsScrollLimit,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msScrollSnapX: NotRequired[
         Union[
             MsScrollSnapX,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msScrollSnapY: NotRequired[
         Union[
             MsScrollSnapY,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     msTransition: NotRequired[
@@ -24802,9 +24556,7 @@ class CSSProperties(TypedDict):
     WebkitBorderRadius: NotRequired[
         Union[
             WebkitBorderRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -25589,17 +25341,13 @@ class CSSProperties(TypedDict):
     boxFlex: NotRequired[
         Union[
             BoxFlex,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     boxFlexGroup: NotRequired[
         Union[
             BoxFlexGroup,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     boxLines: NotRequired[
@@ -25617,9 +25365,7 @@ class CSSProperties(TypedDict):
     boxOrdinalGroup: NotRequired[
         Union[
             BoxOrdinalGroup,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     boxOrient: NotRequired[
@@ -25667,27 +25413,21 @@ class CSSProperties(TypedDict):
     gridColumnGap: NotRequired[
         Union[
             GridColumnGap,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     gridGap: NotRequired[
         Union[
             GridGap,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     gridRowGap: NotRequired[
         Union[
             GridRowGap,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -25919,17 +25659,13 @@ class CSSProperties(TypedDict):
     KhtmlBoxFlex: NotRequired[
         Union[
             KhtmlBoxFlex,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     KhtmlBoxFlexGroup: NotRequired[
         Union[
             KhtmlBoxFlexGroup,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     KhtmlBoxLines: NotRequired[
@@ -25947,9 +25683,7 @@ class CSSProperties(TypedDict):
     KhtmlBoxOrdinalGroup: NotRequired[
         Union[
             KhtmlBoxOrdinalGroup,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     KhtmlBoxOrient: NotRequired[
@@ -25998,9 +25732,7 @@ class CSSProperties(TypedDict):
     KhtmlOpacity: NotRequired[
         Union[
             KhtmlOpacity,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     KhtmlUserSelect: NotRequired[
@@ -26084,45 +25816,35 @@ class CSSProperties(TypedDict):
     MozBorderRadius: NotRequired[
         Union[
             MozBorderRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozBorderRadiusBottomleft: NotRequired[
         Union[
             MozBorderRadiusBottomleft,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozBorderRadiusBottomright: NotRequired[
         Union[
             MozBorderRadiusBottomright,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozBorderRadiusTopleft: NotRequired[
         Union[
             MozBorderRadiusTopleft,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozBorderRadiusTopright: NotRequired[
         Union[
             MozBorderRadiusTopright,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -26156,17 +25878,13 @@ class CSSProperties(TypedDict):
     MozBoxFlex: NotRequired[
         Union[
             MozBoxFlex,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     MozBoxOrdinalGroup: NotRequired[
         Union[
             MozBoxOrdinalGroup,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     MozBoxOrient: NotRequired[
@@ -26243,9 +25961,7 @@ class CSSProperties(TypedDict):
     MozOpacity: NotRequired[
         Union[
             MozOpacity,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     MozOutline: NotRequired[
@@ -26650,45 +26366,35 @@ class CSSProperties(TypedDict):
     MozOutlineRadius: NotRequired[
         Union[
             MozOutlineRadius,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozOutlineRadiusBottomleft: NotRequired[
         Union[
             MozOutlineRadiusBottomleft,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozOutlineRadiusBottomright: NotRequired[
         Union[
             MozOutlineRadiusBottomright,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozOutlineRadiusTopleft: NotRequired[
         Union[
             MozOutlineRadiusTopleft,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
     MozOutlineRadiusTopright: NotRequired[
         Union[
             MozOutlineRadiusTopright,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -27039,9 +26745,7 @@ class CSSProperties(TypedDict):
     OAnimationDelay: NotRequired[
         Union[
             OAnimationDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     OAnimationDirection: NotRequired[
@@ -27064,9 +26768,7 @@ class CSSProperties(TypedDict):
     OAnimationDuration: NotRequired[
         Union[
             OAnimationDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     OAnimationFillMode: NotRequired[
@@ -27221,9 +26923,7 @@ class CSSProperties(TypedDict):
     OTabSize: NotRequired[
         Union[
             OTabSize,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -27300,17 +27000,13 @@ class CSSProperties(TypedDict):
     OTransitionDelay: NotRequired[
         Union[
             OTransitionDelay,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     OTransitionDuration: NotRequired[
         Union[
             OTransitionDuration,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     OTransitionProperty: NotRequired[
@@ -27378,17 +27074,13 @@ class CSSProperties(TypedDict):
     WebkitBoxFlex: NotRequired[
         Union[
             WebkitBoxFlex,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitBoxFlexGroup: NotRequired[
         Union[
             WebkitBoxFlexGroup,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitBoxLines: NotRequired[
@@ -27406,9 +27098,7 @@ class CSSProperties(TypedDict):
     WebkitBoxOrdinalGroup: NotRequired[
         Union[
             WebkitBoxOrdinalGroup,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     WebkitBoxOrient: NotRequired[
@@ -27764,9 +27454,7 @@ class CSSProperties(TypedDict):
     fillOpacity: NotRequired[
         Union[
             FillOpacity,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     fillRule: NotRequired[
@@ -27976,9 +27664,7 @@ class CSSProperties(TypedDict):
     floodOpacity: NotRequired[
         Union[
             FloodOpacity,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     glyphOrientationVertical: NotRequired[
@@ -28452,9 +28138,7 @@ class CSSProperties(TypedDict):
     stopOpacity: NotRequired[
         Union[
             StopOpacity,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     stroke: NotRequired[
@@ -28670,9 +28354,7 @@ class CSSProperties(TypedDict):
     strokeDashoffset: NotRequired[
         Union[
             StrokeDashoffset,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -28705,25 +28387,19 @@ class CSSProperties(TypedDict):
     strokeMiterlimit: NotRequired[
         Union[
             StrokeMiterlimit,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     strokeOpacity: NotRequired[
         Union[
             StrokeOpacity,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
         ]
     ]
     strokeWidth: NotRequired[
         Union[
             StrokeWidth,
-            Literal[
-                "-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"
-            ],
+            Literal["-moz-initial", "inherit", "initial", "revert", "revert-layer", "unset"],
             float,
         ]
     ]
@@ -33681,11 +33357,7 @@ class AlertProps(TypedDict):
 
 class AvatarProps(TypedDict):
     shape: NotRequired[Literal["circle", "square"]]
-    size: NotRequired[
-        Union[
-            PartialRecordBreakpointNumber, Literal["default", "large", "small"], float
-        ]
-    ]
+    size: NotRequired[Union[PartialRecordBreakpointNumber, Literal["default", "large", "small"], float]]
     gap: NotRequired[float]
     src: NotRequired[ReactNode]
     srcSet: NotRequired[str]
@@ -33796,21 +33468,13 @@ ButtonProps = TypedDict(
         "title": NotRequired[str],
         "dir": NotRequired[str],
         "rel": NotRequired[str],
-        "target": NotRequired[
-            Union[Target, Literal["_blank", "_parent", "_self", "_top"]]
-        ],
+        "target": NotRequired[Union[Target, Literal["_blank", "_parent", "_self", "_top"]]],
         "accessKey": NotRequired[str],
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
         "lang": NotRequired[str],
         "prefix": NotRequired[str],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "download": NotRequired[Any],
         "formAction": NotRequired[str],
@@ -33890,9 +33554,7 @@ ColProps = TypedDict(
         "accessKey": NotRequired[str],
         "autoFocus": NotRequired[bool],
         "className": NotRequired[str],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
         "contextMenu": NotRequired[str],
         "dir": NotRequired[str],
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
@@ -33929,11 +33591,7 @@ ColProps = TypedDict(
         "results": NotRequired[float],
         "security": NotRequired[str],
         "unselectable": NotRequired[Literal["off", "on"]],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "is": NotRequired[str],
         "children": NotRequired[ReactNode],
         "dangerouslySetInnerHTML": NotRequired[DangerouslySetInnerHTML],
@@ -34072,9 +33730,7 @@ FlexProps = TypedDict(
         "accessKey": NotRequired[str],
         "autoFocus": NotRequired[bool],
         "className": NotRequired[str],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
         "contextMenu": NotRequired[str],
         "dir": NotRequired[str],
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
@@ -34111,11 +33767,7 @@ FlexProps = TypedDict(
         "results": NotRequired[float],
         "security": NotRequired[str],
         "unselectable": NotRequired[Literal["off", "on"]],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "is": NotRequired[str],
         "dangerouslySetInnerHTML": NotRequired[DangerouslySetInnerHTML],
         "events": NotRequired[FlexPropsEvents],
@@ -34198,17 +33850,9 @@ InputNumberProps = TypedDict(
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
         "lang": NotRequired[str],
         "children": NotRequired[ReactNode],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "enterKeyHint": NotRequired[
-            Literal["done", "enter", "go", "next", "previous", "search", "send"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "enterKeyHint": NotRequired[Literal["done", "enter", "go", "next", "previous", "search", "send"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "disabled": NotRequired[bool],
         "multiple": NotRequired[bool],
@@ -34283,9 +33927,7 @@ SiderProps = TypedDict(
         "accessKey": NotRequired[str],
         "autoFocus": NotRequired[bool],
         "className": NotRequired[str],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
         "contextMenu": NotRequired[str],
         "dir": NotRequired[str],
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
@@ -34322,11 +33964,7 @@ SiderProps = TypedDict(
         "results": NotRequired[float],
         "security": NotRequired[str],
         "unselectable": NotRequired[Literal["off", "on"]],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "is": NotRequired[str],
         "children": NotRequired[ReactNode],
         "dangerouslySetInnerHTML": NotRequired[DangerouslySetInnerHTML],
@@ -34375,18 +34013,10 @@ class PaginationProps(TypedDict):
     locale: NotRequired[PaginationLocale]
     style: NotRequired[CSSProperties]
     selectComponentClass: NotRequired[FunctionComponent]
-    prevIcon: NotRequired[
-        Union[ReactNodeList, FunctionComponent, Optional[Union[str, float, bool]]]
-    ]
-    nextIcon: NotRequired[
-        Union[ReactNodeList, FunctionComponent, Optional[Union[str, float, bool]]]
-    ]
-    jumpPrevIcon: NotRequired[
-        Union[ReactNodeList, FunctionComponent, Optional[Union[str, float, bool]]]
-    ]
-    jumpNextIcon: NotRequired[
-        Union[ReactNodeList, FunctionComponent, Optional[Union[str, float, bool]]]
-    ]
+    prevIcon: NotRequired[Union[ReactNodeList, FunctionComponent, Optional[Union[str, float, bool]]]]
+    nextIcon: NotRequired[Union[ReactNodeList, FunctionComponent, Optional[Union[str, float, bool]]]]
+    jumpPrevIcon: NotRequired[Union[ReactNodeList, FunctionComponent, Optional[Union[str, float, bool]]]]
+    jumpNextIcon: NotRequired[Union[ReactNodeList, FunctionComponent, Optional[Union[str, float, bool]]]]
     events: NotRequired[PaginationPropsEvents]
 
 
@@ -34412,9 +34042,7 @@ class ProgressProps(TypedDict):
     style: NotRequired[CSSProperties]
     gapDegree: NotRequired[float]
     gapPosition: NotRequired[Literal["bottom", "left", "right", "top"]]
-    size: NotRequired[
-        Union[List[Union[Union[str, float], float]], Literal["default", "small"], float]
-    ]
+    size: NotRequired[Union[List[Union[Union[str, float], float]], Literal["default", "small"], float]]
     steps: NotRequired[float]
     successPercent: NotRequired[float]
     children: NotRequired[ReactNode]
@@ -34452,9 +34080,7 @@ class RateProps(TypedDict):
     direction: NotRequired[str]
     disabled: NotRequired[bool]
     count: NotRequired[float]
-    character: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    character: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     characterRender: NotRequired[Dict[str, Any]]
     allowHalf: NotRequired[bool]
     events: NotRequired[RatePropsEvents]
@@ -34462,11 +34088,7 @@ class RateProps(TypedDict):
 
 class ResultProps(TypedDict):
     icon: NotRequired[ReactNode]
-    status: NotRequired[
-        Literal[
-            403, "403", 404, "404", 500, "500", "error", "info", "success", "warning"
-        ]
-    ]
+    status: NotRequired[Literal[403, "403", 404, "404", 500, "500", "error", "info", "success", "warning"]]
     title: NotRequired[ReactNode]
     subTitle: NotRequired[ReactNode]
     extra: NotRequired[ReactNode]
@@ -34480,12 +34102,8 @@ class ResultProps(TypedDict):
 RowProps = TypedDict(
     "RowProps",
     {
-        "gutter": NotRequired[
-            Union[PartialRecordBreakpointNumber1, List[Gutter], float]
-        ],
-        "align": NotRequired[
-            Union[ResponsiveAligns, Literal["bottom", "middle", "stretch", "top"]]
-        ],
+        "gutter": NotRequired[Union[PartialRecordBreakpointNumber1, List[Gutter], float]],
+        "align": NotRequired[Union[ResponsiveAligns, Literal["bottom", "middle", "stretch", "top"]]],
         "justify": NotRequired[
             Union[
                 ResponsiveJustify,
@@ -34508,9 +34126,7 @@ RowProps = TypedDict(
         "accessKey": NotRequired[str],
         "autoFocus": NotRequired[bool],
         "className": NotRequired[str],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
         "contextMenu": NotRequired[str],
         "dir": NotRequired[str],
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
@@ -34547,11 +34163,7 @@ RowProps = TypedDict(
         "results": NotRequired[float],
         "security": NotRequired[str],
         "unselectable": NotRequired[Literal["off", "on"]],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "is": NotRequired[str],
         "children": NotRequired[ReactNode],
         "dangerouslySetInnerHTML": NotRequired[DangerouslySetInnerHTML],
@@ -34571,9 +34183,7 @@ SpaceProps = TypedDict(
         "className": NotRequired[str],
         "rootClassName": NotRequired[str],
         "style": NotRequired[CSSProperties],
-        "size": NotRequired[
-            Union[List[SpaceSize], Literal["large", "middle", "small"], float]
-        ],
+        "size": NotRequired[Union[List[SpaceSize], Literal["large", "middle", "small"], float]],
         "direction": NotRequired[Literal["horizontal", "vertical"]],
         "align": NotRequired[Literal["baseline", "center", "end", "start"]],
         "split": NotRequired[ReactNode],
@@ -34586,9 +34196,7 @@ SpaceProps = TypedDict(
         "suppressHydrationWarning": NotRequired[bool],
         "accessKey": NotRequired[str],
         "autoFocus": NotRequired[bool],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
         "contextMenu": NotRequired[str],
         "dir": NotRequired[str],
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
@@ -34624,11 +34232,7 @@ SpaceProps = TypedDict(
         "results": NotRequired[float],
         "security": NotRequired[str],
         "unselectable": NotRequired[Literal["off", "on"]],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "is": NotRequired[str],
         "children": NotRequired[ReactNode],
         "dangerouslySetInnerHTML": NotRequired[DangerouslySetInnerHTML],
@@ -34689,9 +34293,7 @@ class ColumnProps(TypedDict):
     className: NotRequired[str]
     fixed: NotRequired[Literal[False, "left", "right", True]]
     ellipsis: NotRequired[Union[Ellipsis, bool]]
-    align: NotRequired[
-        Literal["center", "end", "justify", "left", "match-parent", "right", "start"]
-    ]
+    align: NotRequired[Literal["center", "end", "justify", "left", "match-parent", "right", "start"]]
     rowScope: NotRequired[Literal["row", "rowgroup"]]
     events: NotRequired[ColumnPropsEvents]
 
@@ -34719,9 +34321,7 @@ class AntTreeNodeProps(TypedDict):
     loading: NotRequired[bool]
     selected: NotRequired[bool]
     selectable: NotRequired[bool]
-    icon: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    icon: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     children: NotRequired[ReactNode]
 
 
@@ -34741,9 +34341,7 @@ TypographyProps = TypedDict(
         "suppressHydrationWarning": NotRequired[bool],
         "accessKey": NotRequired[str],
         "autoFocus": NotRequired[bool],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
         "contextMenu": NotRequired[str],
         "dir": NotRequired[str],
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
@@ -34778,11 +34376,7 @@ TypographyProps = TypedDict(
         "results": NotRequired[float],
         "security": NotRequired[str],
         "unselectable": NotRequired[Literal["off", "on"]],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "is": NotRequired[str],
         "dangerouslySetInnerHTML": NotRequired[DangerouslySetInnerHTML],
         "events": NotRequired[TypographyPropsEvents],
@@ -34861,17 +34455,9 @@ UploadProps = TypedDict(
         "lang": NotRequired[str],
         "prefix": NotRequired[str],
         "children": NotRequired[ReactNode],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "enterKeyHint": NotRequired[
-            Literal["done", "enter", "go", "next", "previous", "search", "send"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "enterKeyHint": NotRequired[Literal["done", "enter", "go", "next", "previous", "search", "send"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "size": NotRequired[float],
         "alt": NotRequired[str],
@@ -34961,9 +34547,7 @@ class AnchorLinkItemProps(TypedDict):
     replace: NotRequired[bool]
 
 
-DataSourceItemType = Union[
-    ReactNodeList, DataSourceItemObject, Optional[Union[str, float, bool]]
-]
+DataSourceItemType = Union[ReactNodeList, DataSourceItemObject, Optional[Union[str, float, bool]]]
 
 
 RenderNode = Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
@@ -35004,9 +34588,7 @@ class CSSMotionProps(TypedDict):
 RenderIconType = Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
 
 
-class PartialInlineCSSMotionPropsOtherCSSMotionPropsHorizontalCSSMotionPropsVerticalCSSMotionProps(
-    TypedDict
-):
+class PartialInlineCSSMotionPropsOtherCSSMotionPropsHorizontalCSSMotionPropsVerticalCSSMotionProps(TypedDict):
     inline: NotRequired[CSSMotionProps]
     other: NotRequired[CSSMotionProps]
     horizontal: NotRequired[CSSMotionProps]
@@ -35237,9 +34819,7 @@ class SingleCascaderPropsOptionType(TypedDict):
     fieldNames: NotRequired[FieldNames1]
     children: NotRequired[Element]
     value: NotRequired[Union[List[Union[str, float]], List[List[Union[str, float]]]]]
-    defaultValue: NotRequired[
-        Union[List[Union[str, float]], List[List[Union[str, float]]]]
-    ]
+    defaultValue: NotRequired[Union[List[Union[str, float]], List[List[Union[str, float]]]]]
     changeOnSelect: NotRequired[bool]
     displayRender: NotRequired[Dict[str, Any]]
     showCheckedStrategy: NotRequired[Literal["SHOW_CHILD", "SHOW_PARENT"]]
@@ -35254,9 +34834,7 @@ class SingleCascaderPropsOptionType(TypedDict):
     popupClassName: NotRequired[str]
     dropdownClassName: NotRequired[str]
     dropdownMenuColumnStyle: NotRequired[CSSProperties]
-    popupPlacement: NotRequired[
-        Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]
-    ]
+    popupPlacement: NotRequired[Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]]
     placement: NotRequired[Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]]
     builtinPlacements: NotRequired[BuildInPlacements]
     expandIcon: NotRequired[ReactNode]
@@ -35287,9 +34865,7 @@ class SingleCascaderPropsOptionType(TypedDict):
     getRawInputElement: NotRequired[Dict[str, Any]]
     maxTagTextLength: NotRequired[float]
     maxTagCount: NotRequired[Union[str, float]]
-    maxTagPlaceholder: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    maxTagPlaceholder: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     removeIcon: NotRequired[RenderNode]
     dropdownStyle: NotRequired[CSSProperties]
     dropdownMatchSelectWidth: NotRequired[Union[float, bool]]
@@ -35304,9 +34880,7 @@ class MultipleCascaderPropsOptionType(TypedDict):
     fieldNames: NotRequired[FieldNames1]
     children: NotRequired[Element]
     value: NotRequired[Union[List[Union[str, float]], List[List[Union[str, float]]]]]
-    defaultValue: NotRequired[
-        Union[List[Union[str, float]], List[List[Union[str, float]]]]
-    ]
+    defaultValue: NotRequired[Union[List[Union[str, float]], List[List[Union[str, float]]]]]
     changeOnSelect: NotRequired[bool]
     displayRender: NotRequired[Dict[str, Any]]
     showCheckedStrategy: NotRequired[Literal["SHOW_CHILD", "SHOW_PARENT"]]
@@ -35321,9 +34895,7 @@ class MultipleCascaderPropsOptionType(TypedDict):
     popupClassName: NotRequired[str]
     dropdownClassName: NotRequired[str]
     dropdownMenuColumnStyle: NotRequired[CSSProperties]
-    popupPlacement: NotRequired[
-        Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]
-    ]
+    popupPlacement: NotRequired[Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]]
     placement: NotRequired[Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]]
     builtinPlacements: NotRequired[BuildInPlacements]
     expandIcon: NotRequired[ReactNode]
@@ -35354,9 +34926,7 @@ class MultipleCascaderPropsOptionType(TypedDict):
     getRawInputElement: NotRequired[Dict[str, Any]]
     maxTagTextLength: NotRequired[float]
     maxTagCount: NotRequired[Union[str, float]]
-    maxTagPlaceholder: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    maxTagPlaceholder: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     removeIcon: NotRequired[RenderNode]
     dropdownStyle: NotRequired[CSSProperties]
     dropdownMatchSelectWidth: NotRequired[Union[float, bool]]
@@ -35404,12 +34974,8 @@ class OmitPickerBasePropsDayjsComponentsLocaleGenerateConfigHideHeader(TypedDict
     placeholder: NotRequired[str]
     defaultValue: NotRequired[Dayjs]
     autoFocus: NotRequired[bool]
-    format: NotRequired[
-        Union[List[Union[str, Dict[str, Any]]], Union[str, Dict[str, Any]]]
-    ]
-    mode: NotRequired[
-        Literal["date", "decade", "month", "quarter", "time", "week", "year"]
-    ]
+    format: NotRequired[Union[List[Union[str, Dict[str, Any]]], Union[str, Dict[str, Any]]]]
+    mode: NotRequired[Literal["date", "decade", "month", "quarter", "time", "week", "year"]]
     prefixCls: NotRequired[str]
     getPopupContainer: NotRequired[Dict[str, Any]]
     popupStyle: NotRequired[CSSProperties]
@@ -35437,9 +35003,7 @@ class OmitPickerBasePropsDayjsComponentsLocaleGenerateConfigHideHeader(TypedDict
     inputRender: NotRequired[Dict[str, Any]]
     changeOnBlur: NotRequired[bool]
     pickerRef: NotRequired[Object]
-    events: NotRequired[
-        OmitPickerBasePropsDayjsComponentsLocaleGenerateConfigHideHeaderEvents
-    ]
+    events: NotRequired[OmitPickerBasePropsDayjsComponentsLocaleGenerateConfigHideHeaderEvents]
 
 
 class OmitPickerDatePropsDayjsComponentsLocaleGenerateConfigHideHeader(TypedDict):
@@ -35455,12 +35019,8 @@ class OmitPickerDatePropsDayjsComponentsLocaleGenerateConfigHideHeader(TypedDict
     placeholder: NotRequired[str]
     defaultValue: NotRequired[Dayjs]
     autoFocus: NotRequired[bool]
-    format: NotRequired[
-        Union[List[Union[str, Dict[str, Any]]], Union[str, Dict[str, Any]]]
-    ]
-    mode: NotRequired[
-        Literal["date", "decade", "month", "quarter", "time", "week", "year"]
-    ]
+    format: NotRequired[Union[List[Union[str, Dict[str, Any]]], Union[str, Dict[str, Any]]]]
+    mode: NotRequired[Literal["date", "decade", "month", "quarter", "time", "week", "year"]]
     prefixCls: NotRequired[str]
     getPopupContainer: NotRequired[Dict[str, Any]]
     popupStyle: NotRequired[CSSProperties]
@@ -35492,9 +35052,7 @@ class OmitPickerDatePropsDayjsComponentsLocaleGenerateConfigHideHeader(TypedDict
     inputRender: NotRequired[Dict[str, Any]]
     changeOnBlur: NotRequired[bool]
     pickerRef: NotRequired[Object]
-    events: NotRequired[
-        OmitPickerDatePropsDayjsComponentsLocaleGenerateConfigHideHeaderEvents
-    ]
+    events: NotRequired[OmitPickerDatePropsDayjsComponentsLocaleGenerateConfigHideHeaderEvents]
 
 
 class DescriptionsItemType(TypedDict):
@@ -35588,21 +35146,13 @@ ButtonProps1 = TypedDict(
         "title": NotRequired[str],
         "dir": NotRequired[str],
         "rel": NotRequired[str],
-        "target": NotRequired[
-            Union[Target, Literal["_blank", "_parent", "_self", "_top"]]
-        ],
+        "target": NotRequired[Union[Target, Literal["_blank", "_parent", "_self", "_top"]]],
         "accessKey": NotRequired[str],
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
         "lang": NotRequired[str],
         "prefix": NotRequired[str],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "download": NotRequired[Any],
         "formAction": NotRequired[str],
@@ -35781,14 +35331,10 @@ class SliderTooltipProps(TypedDict):
     id: NotRequired[str]
     animation: NotRequired[str]
     zIndex: NotRequired[float]
-    overlay: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    overlay: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     motion: NotRequired[CSSMotionProps]
     align: NotRequired[AlignType]
-    trigger: NotRequired[
-        Union[List[ActionType], Literal["click", "contextMenu", "focus", "hover"]]
-    ]
+    trigger: NotRequired[Union[List[ActionType], Literal["click", "contextMenu", "focus", "hover"]]]
     forceRender: NotRequired[bool]
     fresh: NotRequired[bool]
     mouseLeaveDelay: NotRequired[float]
@@ -35858,9 +35404,7 @@ class TimelineItemProps(TypedDict):
 
 class PartialTransferLocale(TypedDict):
     titles: NotRequired[List[ReactNode]]
-    notFoundContent: NotRequired[
-        Union[ReactNodeList, List[ReactNode], Optional[Union[str, float, bool]]]
-    ]
+    notFoundContent: NotRequired[Union[ReactNodeList, List[ReactNode], Optional[Union[str, float, bool]]]]
     searchPlaceholder: NotRequired[str]
     itemUnit: NotRequired[str]
     itemsUnit: NotRequired[str]
@@ -35983,9 +35527,7 @@ class AutoCompleteProps(TypedDict):
     getRawInputElement: NotRequired[Dict[str, Any]]
     maxTagTextLength: NotRequired[float]
     maxTagCount: NotRequired[Union[str, float]]
-    maxTagPlaceholder: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    maxTagPlaceholder: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     tokenSeparators: NotRequired[List[str]]
     removeIcon: NotRequired[RenderNode]
     dropdownStyle: NotRequired[CSSProperties]
@@ -36029,12 +35571,8 @@ CascaderProps = Union[SingleCascaderPropsOptionType, MultipleCascaderPropsOption
 
 class CollapseProps(TypedDict):
     prefixCls: NotRequired[str]
-    activeKey: NotRequired[
-        Union[Dict[str, Any], List[StringOrNumber], Union[str, float]]
-    ]
-    defaultActiveKey: NotRequired[
-        Union[Dict[str, Any], List[StringOrNumber], Union[str, float]]
-    ]
+    activeKey: NotRequired[Union[Dict[str, Any], List[StringOrNumber], Union[str, float]]]
+    defaultActiveKey: NotRequired[Union[Dict[str, Any], List[StringOrNumber], Union[str, float]]]
     openMotion: NotRequired[CSSMotionProps]
     accordion: NotRequired[bool]
     className: NotRequired[str]
@@ -36097,14 +35635,8 @@ MentionProps = TypedDict(
         "className": NotRequired[str],
         "prefix": NotRequired[Union[List[str], str]],
         "children": NotRequired[ReactNode],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "disabled": NotRequired[bool],
         "wrap": NotRequired[str],
@@ -36182,17 +35714,11 @@ class SubMenuProps(TypedDict):
 
 
 class PopconfirmProps(TypedDict):
-    title: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
-    description: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    title: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
+    description: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     disabled: NotRequired[bool]
     okText: NotRequired[ReactNode]
-    okType: NotRequired[
-        Literal["danger", "dashed", "default", "link", "primary", "text"]
-    ]
+    okType: NotRequired[Literal["danger", "dashed", "default", "link", "primary", "text"]]
     cancelText: NotRequired[ReactNode]
     okButtonProps: NotRequired[ButtonProps1]
     cancelButtonProps: NotRequired[ButtonProps1]
@@ -36267,15 +35793,11 @@ class PopconfirmProps(TypedDict):
     id: NotRequired[str]
     animation: NotRequired[str]
     zIndex: NotRequired[float]
-    overlay: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    overlay: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     motion: NotRequired[CSSMotionProps]
     align: NotRequired[AlignType]
     prefixCls: NotRequired[str]
-    trigger: NotRequired[
-        Union[List[ActionType], Literal["click", "contextMenu", "focus", "hover"]]
-    ]
+    trigger: NotRequired[Union[List[ActionType], Literal["click", "contextMenu", "focus", "hover"]]]
     forceRender: NotRequired[bool]
     fresh: NotRequired[bool]
     mouseLeaveDelay: NotRequired[float]
@@ -36291,12 +35813,8 @@ class PopconfirmProps(TypedDict):
 
 
 class PopoverProps(TypedDict):
-    title: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
-    content: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    title: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
+    content: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     style: NotRequired[CSSProperties]
     className: NotRequired[str]
     rootClassName: NotRequired[str]
@@ -36366,15 +35884,11 @@ class PopoverProps(TypedDict):
     id: NotRequired[str]
     animation: NotRequired[str]
     zIndex: NotRequired[float]
-    overlay: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    overlay: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     motion: NotRequired[CSSMotionProps]
     align: NotRequired[AlignType]
     prefixCls: NotRequired[str]
-    trigger: NotRequired[
-        Union[List[ActionType], Literal["click", "contextMenu", "focus", "hover"]]
-    ]
+    trigger: NotRequired[Union[List[ActionType], Literal["click", "contextMenu", "focus", "hover"]]]
     forceRender: NotRequired[bool]
     fresh: NotRequired[bool]
     mouseLeaveDelay: NotRequired[float]
@@ -36441,14 +35955,8 @@ SegmentedProps = TypedDict(
         "className": NotRequired[str],
         "prefix": NotRequired[str],
         "children": NotRequired[ReactNode],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "async": NotRequired[bool],
         "multiple": NotRequired[bool],
@@ -36613,9 +36121,7 @@ class SelectProps(TypedDict):
     getRawInputElement: NotRequired[Dict[str, Any]]
     maxTagTextLength: NotRequired[float]
     maxTagCount: NotRequired[Union[str, float]]
-    maxTagPlaceholder: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    maxTagPlaceholder: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     tokenSeparators: NotRequired[List[str]]
     removeIcon: NotRequired[RenderNode]
     dropdownStyle: NotRequired[CSSProperties]
@@ -36650,9 +36156,7 @@ class SliderSingleProps(TypedDict):
     min: NotRequired[float]
     max: NotRequired[float]
     step: NotRequired[Optional[float]]
-    marks: NotRequired[
-        Dict[str, Union[ReactNodeList, MarkObj, Optional[Union[str, float, bool]]]]
-    ]
+    marks: NotRequired[Dict[str, Union[ReactNodeList, MarkObj, Optional[Union[str, float, bool]]]]]
     dots: NotRequired[bool]
     included: NotRequired[bool]
     disabled: NotRequired[bool]
@@ -36736,14 +36240,8 @@ TabsProps = TypedDict(
         "lang": NotRequired[str],
         "className": NotRequired[str],
         "prefix": NotRequired[str],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "defaultChecked": NotRequired[bool],
         "defaultValue": NotRequired[Union[List[str], Union[str, float]]],
@@ -36814,9 +36312,7 @@ class TimeRangePickerProps(TypedDict):
     placeholder: NotRequired[List[str]]
     defaultValue: NotRequired[Optional[List[EventValueDayjs]]]
     autoFocus: NotRequired[bool]
-    format: NotRequired[
-        Union[List[Union[str, Dict[str, Any]]], Union[str, Dict[str, Any]]]
-    ]
+    format: NotRequired[Union[List[Union[str, Dict[str, Any]]], Union[str, Dict[str, Any]]]]
     mode: NotRequired[List[PanelMode]]
     prefixCls: NotRequired[str]
     getPopupContainer: NotRequired[Dict[str, Any]]
@@ -37008,9 +36504,7 @@ class TimeRangePickerProps(TypedDict):
     changeOnBlur: NotRequired[bool]
     pickerRef: NotRequired[Object]
     defaultOpenValue: NotRequired[Dayjs]
-    ranges: NotRequired[
-        RecordStringEventValueDayjsEventValueDayjsEventValueDayjsEventValueDayjs
-    ]
+    ranges: NotRequired[RecordStringEventValueDayjsEventValueDayjsEventValueDayjsEventValueDayjs]
     allowEmpty: NotRequired[List[bool]]
     activePickerIndex: NotRequired[Literal[0, 1]]
     events: NotRequired[TimeRangePickerPropsEvents]
@@ -37030,9 +36524,7 @@ class TimelineProps(TypedDict):
 
 
 class TooltipProps(TypedDict):
-    trigger: NotRequired[
-        Union[List[ActionType], Literal["click", "contextMenu", "focus", "hover"]]
-    ]
+    trigger: NotRequired[Union[List[ActionType], Literal["click", "contextMenu", "focus", "hover"]]]
     defaultVisible: NotRequired[bool]
     visible: NotRequired[bool]
     placement: NotRequired[str]
@@ -37040,9 +36532,7 @@ class TooltipProps(TypedDict):
     animation: NotRequired[str]
     motion: NotRequired[CSSMotionProps]
     afterVisibleChange: NotRequired[Dict[str, Any]]
-    overlay: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    overlay: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     overlayStyle: NotRequired[CSSProperties]
     overlayClassName: NotRequired[str]
     getTooltipContainer: NotRequired[Dict[str, Any]]
@@ -37155,9 +36645,7 @@ class TreeSelectProps(TypedDict):
     getRawInputElement: NotRequired[Dict[str, Any]]
     maxTagTextLength: NotRequired[float]
     maxTagCount: NotRequired[Union[str, float]]
-    maxTagPlaceholder: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    maxTagPlaceholder: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     tokenSeparators: NotRequired[List[str]]
     removeIcon: NotRequired[RenderNode]
     dropdownStyle: NotRequired[CSSProperties]
@@ -37185,14 +36673,8 @@ OmitMenuPropsItems = TypedDict(
         "className": NotRequired[str],
         "prefix": NotRequired[str],
         "children": NotRequired[ReactNode],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "disabled": NotRequired[bool],
         "multiple": NotRequired[bool],
@@ -37244,9 +36726,7 @@ OmitMenuPropsItems = TypedDict(
         "defaultSelectedKeys": NotRequired[List[str]],
         "selectedKeys": NotRequired[List[str]],
         "inlineIndent": NotRequired[float],
-        "defaultMotions": NotRequired[
-            PartialInlineCSSMotionPropsOtherCSSMotionPropsHorizontalCSSMotionPropsVerticalCSSMotionProps
-        ],
+        "defaultMotions": NotRequired[PartialInlineCSSMotionPropsOtherCSSMotionPropsHorizontalCSSMotionPropsVerticalCSSMotionProps],
         "subMenuOpenDelay": NotRequired[float],
         "subMenuCloseDelay": NotRequired[float],
         "forceSubMenuRender": NotRequired[bool],
@@ -37299,12 +36779,8 @@ class OmitPickerTimePropsDayjsComponentsLocaleGenerateConfigHideHeader(TypedDict
     placeholder: NotRequired[str]
     defaultValue: NotRequired[Dayjs]
     autoFocus: NotRequired[bool]
-    format: NotRequired[
-        Union[List[Union[str, Dict[str, Any]]], Union[str, Dict[str, Any]]]
-    ]
-    mode: NotRequired[
-        Literal["date", "decade", "month", "quarter", "time", "week", "year"]
-    ]
+    format: NotRequired[Union[List[Union[str, Dict[str, Any]]], Union[str, Dict[str, Any]]]]
+    mode: NotRequired[Literal["date", "decade", "month", "quarter", "time", "week", "year"]]
     prefixCls: NotRequired[str]
     getPopupContainer: NotRequired[Dict[str, Any]]
     popupStyle: NotRequired[CSSProperties]
@@ -37493,14 +36969,10 @@ class OmitPickerTimePropsDayjsComponentsLocaleGenerateConfigHideHeader(TypedDict
     changeOnBlur: NotRequired[bool]
     pickerRef: NotRequired[Object]
     defaultOpenValue: NotRequired[Dayjs]
-    events: NotRequired[
-        OmitPickerTimePropsDayjsComponentsLocaleGenerateConfigHideHeaderEvents
-    ]
+    events: NotRequired[OmitPickerTimePropsDayjsComponentsLocaleGenerateConfigHideHeaderEvents]
 
 
-class PickerBasePropsDayjs(
-    OmitPickerBasePropsDayjsComponentsLocaleGenerateConfigHideHeader
-):
+class PickerBasePropsDayjs(OmitPickerBasePropsDayjsComponentsLocaleGenerateConfigHideHeader):
     locale: NotRequired[PickerLocale]
     size: NotRequired[SizeType]
     placement: NotRequired[Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]]
@@ -37508,9 +36980,7 @@ class PickerBasePropsDayjs(
     status: NotRequired[Literal["", "error", "warning"]]
 
 
-class PickerDatePropsDayjs(
-    OmitPickerDatePropsDayjsComponentsLocaleGenerateConfigHideHeader
-):
+class PickerDatePropsDayjs(OmitPickerDatePropsDayjsComponentsLocaleGenerateConfigHideHeader):
     locale: NotRequired[PickerLocale]
     size: NotRequired[SizeType]
     placement: NotRequired[Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]]
@@ -37554,14 +37024,8 @@ CardProps = TypedDict(
         "draggable": NotRequired[Literal[False, "false", True, "true"]],
         "lang": NotRequired[str],
         "prefix": NotRequired[str],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "defaultChecked": NotRequired[bool],
         "defaultValue": NotRequired[Union[List[str], Union[str, float]]],
@@ -37632,9 +37096,7 @@ class Navigator(TypedDict):
     events: NotRequired[NavigatorEvents]
 
 
-class PickerTimePropsDayjs(
-    OmitPickerTimePropsDayjsComponentsLocaleGenerateConfigHideHeader
-):
+class PickerTimePropsDayjs(OmitPickerTimePropsDayjsComponentsLocaleGenerateConfigHideHeader):
     locale: NotRequired[PickerLocale]
     size: NotRequired[SizeType]
     placement: NotRequired[Literal["bottomLeft", "bottomRight", "topLeft", "topRight"]]
@@ -37642,9 +37104,7 @@ class PickerTimePropsDayjs(
     status: NotRequired[Literal["", "error", "warning"]]
 
 
-DatePickerProps = Union[
-    PickerTimePropsDayjs, PickerBasePropsDayjs, PickerDatePropsDayjs
-]
+DatePickerProps = Union[PickerTimePropsDayjs, PickerBasePropsDayjs, PickerDatePropsDayjs]
 
 
 class BreadcrumbProps(TypedDict):
@@ -37721,9 +37181,7 @@ class CarouselProps(TypedDict):
 
 class ColorPickerProps(TypedDict):
     value: NotRequired[Union[ColorModel, RGB1, RGBA1, HSB, HSBA, Union[str, float]]]
-    defaultValue: NotRequired[
-        Union[ColorModel, RGB1, RGBA1, HSB, HSBA, Union[str, float]]
-    ]
+    defaultValue: NotRequired[Union[ColorModel, RGB1, RGBA1, HSB, HSBA, Union[str, float]]]
     className: NotRequired[str]
     style: NotRequired[CSSProperties]
     panelRender: NotRequired[Dict[str, Any]]
@@ -37738,9 +37196,7 @@ class DrawerProps(TypedDict):
     prefixCls: NotRequired[str]
     open: NotRequired[bool]
     destroyOnClose: NotRequired[bool]
-    getContainer: NotRequired[
-        Union[Element, DocumentFragment, bool, Union[str, Dict[str, Any]]]
-    ]
+    getContainer: NotRequired[Union[Element, DocumentFragment, bool, Union[str, Dict[str, Any]]]]
     panelRef: NotRequired[Optional[Dict[str, Any]]]
     classNames: NotRequired[DrawerClassNames]
     styles: NotRequired[DrawerStyles]
@@ -37840,14 +37296,8 @@ ImageProps = TypedDict(
         "className": NotRequired[str],
         "prefix": NotRequired[str],
         "children": NotRequired[ReactNode],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "alt": NotRequired[str],
         "crossOrigin": NotRequired[CrossOrigin],
@@ -37911,13 +37361,9 @@ class ModalProps(TypedDict):
     afterOpenChange: NotRequired[Dict[str, Any]]
     centered: NotRequired[bool]
     width: NotRequired[Union[str, float]]
-    footer: NotRequired[
-        Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]
-    ]
+    footer: NotRequired[Union[ReactNodeList, Optional[Union[str, float, Dict[str, Any], bool]]]]
     okText: NotRequired[ReactNode]
-    okType: NotRequired[
-        Literal["danger", "dashed", "default", "link", "primary", "text"]
-    ]
+    okType: NotRequired[Literal["danger", "dashed", "default", "link", "primary", "text"]]
     cancelText: NotRequired[ReactNode]
     maskClosable: NotRequired[bool]
     forceRender: NotRequired[bool]
@@ -38037,14 +37483,8 @@ MenuProps = TypedDict(
         "className": NotRequired[str],
         "prefix": NotRequired[str],
         "children": NotRequired[ReactNode],
-        "contentEditable": NotRequired[
-            Literal[False, "false", "inherit", "plaintext-only", True, "true"]
-        ],
-        "inputMode": NotRequired[
-            Literal[
-                "decimal", "email", "none", "numeric", "search", "tel", "text", "url"
-            ]
-        ],
+        "contentEditable": NotRequired[Literal[False, "false", "inherit", "plaintext-only", True, "true"]],
+        "inputMode": NotRequired[Literal["decimal", "email", "none", "numeric", "search", "tel", "text", "url"]],
         "nonce": NotRequired[str],
         "disabled": NotRequired[bool],
         "multiple": NotRequired[bool],
@@ -38094,9 +37534,7 @@ MenuProps = TypedDict(
         "selectable": NotRequired[bool],
         "defaultSelectedKeys": NotRequired[List[str]],
         "selectedKeys": NotRequired[List[str]],
-        "defaultMotions": NotRequired[
-            PartialInlineCSSMotionPropsOtherCSSMotionPropsHorizontalCSSMotionPropsVerticalCSSMotionProps
-        ],
+        "defaultMotions": NotRequired[PartialInlineCSSMotionPropsOtherCSSMotionPropsHorizontalCSSMotionPropsVerticalCSSMotionProps],
         "subMenuOpenDelay": NotRequired[float],
         "subMenuCloseDelay": NotRequired[float],
         "forceSubMenuRender": NotRequired[bool],

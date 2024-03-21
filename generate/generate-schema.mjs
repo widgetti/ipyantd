@@ -52,10 +52,7 @@ async function extractPropsAndSaveToFile(inputFilePath, outputFilePath) {
 }
 const outputFilePath = "./generate/propslist.json"; // Replace with your desired output file path
 
-const propsList = await extractPropsAndSaveToFile(
-  inputFilePath,
-  outputFilePath,
-);
+const propsList = await extractPropsAndSaveToFile(inputFilePath, outputFilePath);
 
 // We can either get the schema for one file and one type...
 // const schema = TJS.generateSchema(program, propsList, settings);
@@ -72,16 +69,12 @@ propsList.forEach((props) => {
 });
 const schema = generator.getSchemaForSymbols(propsList);
 
-await fs.writeFile(
-  "./generate/schema.json",
-  JSON.stringify(schema, undefined, 4),
-  function (err) {
-    if (err) {
-      return console.log(err);
-    }
-    console.log("The file was saved!");
-  },
-);
+await fs.writeFile("./generate/schema.json", JSON.stringify(schema, undefined, 4), function (err) {
+  if (err) {
+    return console.log(err);
+  }
+  console.log("The file was saved!");
+});
 
 // // ... or a generator that lets us incrementally get more schemas
 

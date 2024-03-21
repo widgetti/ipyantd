@@ -47,9 +47,7 @@ def Button(
 ):
     widget_cls = widgets.Button
     comp = reacton.core.ComponentWidget(widget=widget_cls)
-    return reacton.core.Element(
-        comp, kwargs={"props": props, "events": events, "children": children}
-    )
+    return reacton.core.Element(comp, kwargs={"props": props, "events": events, "children": children})
 
 
 def Slider(
@@ -59,14 +57,10 @@ def Slider(
     events: SliderSinglePropsEvents = {},
     children: ChildrenType = [],
 ):
-    return widgets.Slider.element(
-        value=value, on_value=on_value, props=props, events=events, children=children
-    )
+    return widgets.Slider.element(value=value, on_value=on_value, props=props, events=events, children=children)
 
 
-def Flex(
-    props: FlexProps = {}, events: FlexPropsEvents = {}, children: ChildrenType = []
-):
+def Flex(props: FlexProps = {}, events: FlexPropsEvents = {}, children: ChildrenType = []):
     widget_cls = widgets.Flex
     comp = reacton.core.ComponentWidget(widget=widget_cls)
     return reacton.core.Element(comp, kwargs={"props": props, "children": children})
@@ -75,17 +69,13 @@ def Flex(
 def Row(props: RowProps = {}, events: RowPropsEvents = {}, children: ChildrenType = []):
     widget_cls = widgets.Row
     comp = reacton.core.ComponentWidget(widget=widget_cls)
-    return reacton.core.Element(
-        comp, kwargs={"props": props, "events": events, "children": children}
-    )
+    return reacton.core.Element(comp, kwargs={"props": props, "events": events, "children": children})
 
 
 def Col(props: ColProps = {}, events: ColPropsEvents = {}, children: ChildrenType = []):
     widget_cls = widgets.Col
     comp = reacton.core.ComponentWidget(widget=widget_cls)
-    return reacton.core.Element(
-        comp, kwargs={"props": props, "events": events, "children": children}
-    )
+    return reacton.core.Element(comp, kwargs={"props": props, "events": events, "children": children})
 
 
 def Select(
@@ -194,12 +184,8 @@ def DatePicker(
 
 
 def ColorPicker(
-    value: Optional[
-        Union[ColorModel, RGB1, RGBA1, HSB, HSBA, Union[str, float]]
-    ] = None,
-    on_value: Optional[
-        Callable[[Union[ColorModel, RGB1, RGBA1, HSB, HSBA, Union[str, float]]], None]
-    ] = None,
+    value: Optional[Union[ColorModel, RGB1, RGBA1, HSB, HSBA, Union[str, float]]] = None,
+    on_value: Optional[Callable[[Union[ColorModel, RGB1, RGBA1, HSB, HSBA, Union[str, float]]], None]] = None,
     props: ColorPickerProps = {},
     events: ColorPickerPropsEvents = {},
     children: ChildrenType = [],
@@ -238,9 +224,7 @@ def Page():
             DatePicker(onChange=pick, value=date)
         else:
             DatePicker(onChange=pick)
-        Button(
-            children=["Hi1 " + str(count)], props=dict(type="primary"), onClick=click
-        )
+        Button(children=["Hi1 " + str(count)], props=dict(type="primary"), onClick=click)
         Button(
             children=["Hi2 " + str(date)],
             type="primary",

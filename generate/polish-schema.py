@@ -112,9 +112,7 @@ for name, definition in schema["definitions"].copy().items():
                 events[name].add(prop_name)
                 definition["properties"].pop(prop_name)
     if events[name]:
-        definition["properties"]["events"] = {
-            "$ref": "#/definitions/" + name + "Events"
-        }
+        definition["properties"]["events"] = {"$ref": "#/definitions/" + name + "Events"}
 
 all_events = set()
 for name, event_set in events.items():
