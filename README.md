@@ -4,6 +4,9 @@ ipywidget wrapper for [Ant Design components](https://ant.design/) using [ipyrea
 
 https://github.com/widgetti/ipyantd/assets/1765949/419020e8-27ad-4722-9d00-5a5e0dad17f3
 
+- [(classical) widget demo code](https://github.com/widgetti/ipyantd/blob/master/examples/demo.ipynb)
+- [Solara/reacton component demo code](https://github.com/widgetti/ipyantd/blob/master/examples/demo.py)
+
 # Components
 
 The following components are wrapped (more will be coming):

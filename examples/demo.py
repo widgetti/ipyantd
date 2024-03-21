@@ -1,3 +1,4 @@
+# run as: $ solara run examples/demo.py
 import ipyantd.components as antd
 import ipyantd.icons.components as icons
 
