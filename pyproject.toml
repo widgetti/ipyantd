@@ -5,8 +5,11 @@ requires = [
 ]
 build-backend = "hatchling.build"
 
+[tool.hatch.build.targets.wheel]
+packages = ["ipyantd"]
+
 [project]
-name = "ipyantd"
+name = "solara-ipyantd"
 dynamic = ["version"]
 description = "React for ipywidgets that just works"
 readme = "README.md"
