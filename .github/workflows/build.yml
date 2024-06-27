@@ -104,7 +104,7 @@ jobs:
           path: test-results
 
   release:
-    #    if: startsWith(github.event.ref, 'refs/tags/v')
+    if: startsWith(github.event.ref, 'refs/tags/v')
     needs: [ui-test]
     # needs: [test, ui-test]
     runs-on: ubuntu-20.04
