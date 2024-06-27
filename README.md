@@ -39,3 +39,9 @@ npm ci
 npm run build
 pip install -e .
 ```
+
+# Sponsors
+
+Project ipyantd receives direct funding from the following sources:
+
+[![MSD](https://raw.githubusercontent.com/widgetti/ipyvue/master/resources/msd-logo.svg)](https://msd.com)
