@@ -29,7 +29,7 @@ The following components are wrapped (more will be coming):
 # Installation
 
 ```
-pip install ipyantd
+pip install solara-ipyantd
 ```
 
 # Dev install

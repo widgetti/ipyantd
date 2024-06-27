@@ -108,6 +108,8 @@ jobs:
     needs: [ui-test]
     # needs: [test, ui-test]
     runs-on: ubuntu-20.04
+    permissions:
+      id-token: write # this permission is mandatory for trusted publishing
     steps:
       - uses: actions/download-artifact@v3
         with:
@@ -129,17 +131,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install twine wheel jupyter-packaging jupyterlab
 
-      - name: Publish the Python package
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-        run: twine upload --skip-existing dist/*.whl dist/*.tar.gz
-
-      # - name: Publish the NPM package
-      #   run: |
-      #     echo $PRE_RELEASE
-      #     if [[ $PRE_RELEASE == "true" ]]; then export TAG="next"; else export TAG="latest"; fi
-      #     npm publish --tag ${TAG} --access public *.tgz
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      #     PRE_RELEASE: ${{ github.event.release.prerelease }}
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist
